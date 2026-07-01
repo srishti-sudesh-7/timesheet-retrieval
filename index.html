@@ -20,6 +20,18 @@
         <button onclick="showDefaulters()">Timesheet Defaulters</button>
     </div>
 
+    <div>
+        <label>Upload Salary CSV</label>
+        <input type="file" id="salaryFile" accept=".csv">
+        <button onclick="loadSalaryCSV()">Load Salary File</button>
+        <label>Project</label>
+        <select id="projectSelect"></select>
+        <button onclick="calculateProjectCost()">Calculate Project Cost</button>
+    </div>
+
+
+<h3 id="projectCost"></h3>
+
     <div id="defaulters"></div>
 
     <table id="timesheetTable">
